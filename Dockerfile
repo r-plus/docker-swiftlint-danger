@@ -4,7 +4,7 @@ RUN swiftlint version
 
 # Install Ruby and Danger
 RUN apt-get update && apt-get install -y ruby
-RUN gem install bundler rake danger danger-swiftlint
+RUN gem install bundler rake danger danger-swiftlint danger-xcprofiler
 RUN danger --version
 
 # Install misspell
